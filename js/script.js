@@ -1,5 +1,5 @@
 
-import currencies from '././allConvert.js';
+import currencies from "./allConvert.js";
 
 document.addEventListener('DOMContentLoaded', function () {
     const listConvertFrom = document.getElementById('from-currency');
