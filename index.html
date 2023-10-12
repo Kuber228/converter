@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <title>Конвертер валют</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="converter">
+                    <div class="converter_list"></div>
+                        <h1>Конвертер валют</h1>
+                        <form id="currency-converter">
+                            <input type="number" id="amount" placeholder="Сума">
+                            <select id="from-currency"></select>
+                            <select id="to-currency"></select>
+                            <button type="button" id="convert">Конвертувати</button>
+                            <div class="resuls_box">
+                                <div class="result">Конвертована сума:</div>
+                                <span id="converted-amount"></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="js/allConvert.js"></script>
+        <script type="module" src="/js/script.js"></script>
+    </body>
+</html>
