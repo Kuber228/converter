@@ -1,0 +1,146 @@
+@import "_nullstyle";
+
+.wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-color: #f0f8f0;
+}
+
+.container {
+   text-align: center;
+   max-width: 100%;
+}
+
+.converter{
+   width: 90%;
+   margin: 0 auto;
+}
+
+h1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-size: 28px; /* Збільшив розмір заголовка */
+   color: #01d825; /* Зелений колір заголовка */
+   
+}
+
+#currency-converter {
+   text-align: center;
+   margin: 20px auto;
+   padding: 20px;
+   border: 1px solid #ccc;
+   max-width: 400px;
+   background-color: #f8f8f8;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+}
+
+#amount {
+   margin-bottom: 10px;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   background-color: #fff;
+   font-size: 16px;
+   color: #333;
+   box-sizing: border-box;
+   max-width: 100%;
+}
+
+select, button {
+   max-width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   background-color: #fff;
+   font-size: 16px;
+   color: #333;
+}
+
+button {
+   background-color: #01d825;
+   color: #000000;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+button:hover {
+   background-color: #00b336;
+}
+
+label {
+   font-weight: bold;
+   display: block;
+   margin-top: 20px;
+}
+
+#converted-amount {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 32px;
+   color: #01d825;
+   font-weight: bold;
+   animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+   0% { transform: scale(1); }
+   50% { transform: scale(1.1); }
+   100% { transform: scale(1); }
+}
+
+.result {
+   font-weight: bold;
+   font-size: 20px;
+   color: #333;
+   margin: 10px 0px;
+}
+
+.result-box {
+   background-color: #f8f8f8;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+   padding: 20px;
+   text-align: center;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   margin-top: 20px;
+}
+
+
+#amount,select {
+   width: 100%;
+   margin-bottom: 10px;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   background-color: #fff;
+   font-size: 16px;
+   color: #333;
+}
+
+@media (max-width: 768px) {
+   h1 {
+       font-size: 24px;
+   }
+   #currency-converter {
+      max-width: 100%;
+  }
+}
+
+button {
+   background-color: #01d825;
+   color: #fff;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   width: 100%;
+   padding: 12px;
+   border: none;
+   border-radius: 10px;
+   font-size: 18px;
+}
+
